@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <link rel="icon" href="Imatges/icono.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Alberto</title>
+</head>
+<body>
+    <header>
+        <img src="Imatges/giphy.gif" alt="pong">
+        <nav>
+            <ul>
+            <li> <a href="#joc">Play PONG</a> </li>
+            <li> <a href="instruccions.html" target="_blank">Com jugar?</a> </li>
+            <li> <a href="https://p5js.org/es/" target="_blank" rel="noopener noreferrer">P5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>EL PONG DE N'ALBERTO</h1>
+        <section>
+            <h3>Variables de la pilota</h3>
+            <label for="color_pilota">Color: </label>
+            <input type="color" name="color_pilota" id="color_pilota" value="#ffffff" ><br>
+            <label for="vel_pilota">Velocitat pilota: </label>
+            <input type="number" name="vel_pilota" id="vel_pilota" value="8" max="15" min="3">
+        </section>
+        <section>
+            <h3>Variables jugador</h3>
+            <label for="nom_jugador1">Nom jugador 1: </label>
+            <input type="text" name="nom_jugador1" id="nom_jugador1" value="Player_1"><br>
+            <label for="nom_jugador2">Nom jugador 2: </label>
+            <input type="text" name="nom_jugador2" id="nom_jugador2" value="Player_2"><br>
+            <label for="hei_jugadors">Tamany jugadors: </label>
+            <input type="range" name="tamanyjugadors" id="tamanyjugadors" value="125" max="200" min="50">
+        </section>
+        <section id="joc">
+            <div id="canvasContainer"></div>
+        </section>
+
+    </main>
+    <footer>
+        <article>
+            <p>Aquest pong ha estat disenyat i programat per un alumne de segon de batxiller, amb l'ajuda i assessorament del professorat de l'IES Manacor. Utilitzant la bibloteca de <a href="https://p5js.org/es/" target="_blank">P5</a> que ha facilitat la tasca amb les seves eines.</p> 
+         </article>
+    </footer>
+    <script src="pong/marcador.js"></script>
+    <script src="pong/jugador.js"></script>
+    <script src="pong/pilota.js"></script>
+    <script src="pong/sketch.js"></script>
+</body>
+</html>
